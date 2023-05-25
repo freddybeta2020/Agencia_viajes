@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:text="Viajes Sol Y Playa" />
+
+    <EditText
+        android:id="@+id/etcantidad"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:hint="Cantidad Personas"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/etvalor"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:layout_marginTop="20dp"
+        android:hint="Valor Por Persona Cartagena"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+    <CheckBox
+        android:id="@+id/cbiva"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:layout_height="wrap_content"
+        android:text=" Iva del 19% " />
+
+    <CheckBox
+        android:id="@+id/cbdescuento"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:layout_height="wrap_content"
+        android:text="Descuento 10% " />
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tveuno"
+            android:layout_width="49dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Valor  venta"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvventabruta"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvedos"
+            android:layout_width="49dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Valor Iva"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tviva"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="0" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvetres"
+            android:layout_width="49dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Valor Descuento"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvdescuento"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="0" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvcuatro"
+            android:layout_width="49dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Neto a Pagar"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvneto"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="0" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btcalcular"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:textSize="27dp"
+            android:onClick="Calcular"
+            android:layout_weight="1"
+            android:text="Calcular" />
+
+        <Button
+            android:id="@+id/btlimpiar"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:onClick="Limpiar"
+            android:textSize="27dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="Limpiar" />
+    </LinearLayout>
+
+</LinearLayout>
